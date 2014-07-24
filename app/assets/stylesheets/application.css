@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+h1 {
+	color: white;
+	/*width: 500px;*/
+	background-color: #808000;
+	/*height: 50px;*/
+	/*font-size: 45px;*/
+}
+
+table {
+	font-family: 'Poiret One';
+	font-size: 20px;
+	padding: 5px;
+}
+
+body {
+	background-color: #8B8378;
+	font-size: 30px;
+	font-family: 'Poiret One';
+}
+
+.index {
+	text-align: center;
+	font-weight: lighter;
+}
+
+#new {
+	font-style: italic;
+}
+
+#next {
+	font-weight: lighter;
+}
+
+#now {
+	font-weight: lighter;
+}
+/*table {
+	font-family: 'Helvetica';
+	font-size: 20px;
+}
+
+body {
+	background-color: #76EEC6;
+	font-size: 30px;
+	font-family: 'Helvetica';
+}
+
+.navbar {
+	font-family: 'Helvetica';
+	font-size: 30px;
+}
+
+#first {
+	font-size: 20px;
+}
+
+#second {
+	font-size: 20px;
+}*/
+

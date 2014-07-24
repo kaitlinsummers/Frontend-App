@@ -1,0 +1,36 @@
+<%= javascript_tag("question('Kaitlin');") %>
+
+<a href = '/about' id = 'first' class = 'navbar'> ABOUT </a> |
+<a href = '/contact' id = 'second' class = 'navbar'> CONTACT </a>
+
+<center><h1>BUILD SOME
+THING</h1>
+
+<%= image_tag('citybirds.jpg', width: 120, height: 100); %><%= image_tag('flowerneg.jpg', width: 115, height: 100); %><%= image_tag('flowerpower.jpg', width: 110, height: 100); %><%= image_tag('golden-goose1.jpg', width: 110, height: 100); %><%= image_tag('graphic art.jpg', width: 110, height: 100); %><%= image_tag('humbird.jpg', width: 110, height: 100); %><%= image_tag('rhinogold.jpg', width: 110, height: 100); %><%= image_tag('sharkbeauty.jpg', width: 115, height: 100); %><%= image_tag('woman.jpg', width: 110, height: 100); %><%= image_tag('woman2.jpg', width: 120, height: 100); %><%= image_tag('citybirds.jpg', width: 120, height: 100); %>
+</center>
+<br><br><br><br><br><br><br>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.age %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
